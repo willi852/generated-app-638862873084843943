@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: right;
+  min-height: 36px;
+  word-wrap: break-word;
+}
+
+.result {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  min-height: 36px;
+}
+
+.buttons {
+  display: grid;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:nth-child(4n+4) {
+  background-color: #ff9f0a;
+  color: white;
+}
+
+button:nth-child(4n+4):hover {
+  background-color: #ff7b00;
+}
+
+button:last-child {
+  grid-column: span 4;
+  background-color: #007bff;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #0069d9;
+}
