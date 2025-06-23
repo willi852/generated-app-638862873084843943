@@ -1,0 +1,19 @@
+{
+  "name": "scientific-calculator-fullstack",
+  "version": "1.0.0",
+  "description": "Fullstack Scientific Calculator",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "client": "cd client && npm start",
+    "server": "cd server && node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build-client": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
